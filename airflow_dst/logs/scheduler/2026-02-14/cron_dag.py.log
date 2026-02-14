@@ -2252,3 +2252,28 @@
 [2026-02-14T22:38:05.365+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:05.365+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-02-14T22:38:05.413+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:05.412+0000] {dag.py:3823} INFO - Setting next_dagrun for minutely_dag to 2026-02-14 22:37:00+00:00, run_after=2026-02-14 22:38:00+00:00
 [2026-02-14T22:38:05.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cron_dag.py took 0.142 seconds
+[2026-02-14T22:38:35.754+0000] {processor.py:161} INFO - Started process (PID=27030) to work on /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:38:35.756+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cron_dag.py for tasks to queue
+[2026-02-14T22:38:35.761+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:35.760+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:38:35.774+0000] {processor.py:840} INFO - DAG(s) 'minutely_dag' retrieved from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:38:35.809+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:35.808+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:38:35.867+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:35.864+0000] {dag.py:3823} INFO - Setting next_dagrun for minutely_dag to 2026-02-14 22:37:00+00:00, run_after=2026-02-14 22:38:00+00:00
+[2026-02-14T22:38:35.902+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cron_dag.py took 0.154 seconds
+[2026-02-14T22:39:06.085+0000] {processor.py:161} INFO - Started process (PID=27114) to work on /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:06.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cron_dag.py for tasks to queue
+[2026-02-14T22:39:06.091+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:06.091+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:06.104+0000] {processor.py:840} INFO - DAG(s) 'minutely_dag' retrieved from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:06.152+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:06.151+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:06.209+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:06.209+0000] {dag.py:3823} INFO - Setting next_dagrun for minutely_dag to 2026-02-14 22:38:00+00:00, run_after=2026-02-14 22:39:00+00:00
+[2026-02-14T22:39:06.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cron_dag.py took 0.191 seconds
+[2026-02-14T22:39:36.809+0000] {processor.py:161} INFO - Started process (PID=27197) to work on /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:36.811+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cron_dag.py for tasks to queue
+[2026-02-14T22:39:36.814+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:36.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:36.824+0000] {processor.py:840} INFO - DAG(s) 'minutely_dag' retrieved from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:39:36.853+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:36.853+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:36.891+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:36.891+0000] {dag.py:3823} INFO - Setting next_dagrun for minutely_dag to 2026-02-14 22:38:00+00:00, run_after=2026-02-14 22:39:00+00:00
+[2026-02-14T22:39:36.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/cron_dag.py took 0.123 seconds
+[2026-02-14T22:40:07.352+0000] {processor.py:161} INFO - Started process (PID=27281) to work on /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:40:07.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/cron_dag.py for tasks to queue
+[2026-02-14T22:40:07.358+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:40:07.357+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/cron_dag.py
+[2026-02-14T22:40:07.371+0000] {processor.py:840} INFO - DAG(s) 'minutely_dag' retrieved from /opt/airflow/dags/cron_dag.py

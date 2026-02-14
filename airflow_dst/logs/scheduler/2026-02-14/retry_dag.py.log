@@ -2252,3 +2252,31 @@
 [2026-02-14T22:38:03.180+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:03.179+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-02-14T22:38:03.199+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:03.198+0000] {dag.py:3823} INFO - Setting next_dagrun for retries_dag to None, run_after=None
 [2026-02-14T22:38:03.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_dag.py took 0.101 seconds
+[2026-02-14T22:38:33.569+0000] {processor.py:161} INFO - Started process (PID=27027) to work on /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:38:33.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_dag.py for tasks to queue
+[2026-02-14T22:38:33.573+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:33.573+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:38:33.582+0000] {processor.py:840} INFO - DAG(s) 'retries_dag' retrieved from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:38:33.613+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:33.613+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:38:33.639+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:33.638+0000] {dag.py:3823} INFO - Setting next_dagrun for retries_dag to None, run_after=None
+[2026-02-14T22:38:33.686+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_dag.py took 0.123 seconds
+[2026-02-14T22:39:03.856+0000] {processor.py:161} INFO - Started process (PID=27111) to work on /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:03.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_dag.py for tasks to queue
+[2026-02-14T22:39:03.861+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:03.860+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:03.873+0000] {processor.py:840} INFO - DAG(s) 'retries_dag' retrieved from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:03.908+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:03.907+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:03.931+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:03.930+0000] {dag.py:3823} INFO - Setting next_dagrun for retries_dag to None, run_after=None
+[2026-02-14T22:39:03.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_dag.py took 0.113 seconds
+[2026-02-14T22:39:34.634+0000] {processor.py:161} INFO - Started process (PID=27194) to work on /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:34.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_dag.py for tasks to queue
+[2026-02-14T22:39:34.638+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:34.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:34.645+0000] {processor.py:840} INFO - DAG(s) 'retries_dag' retrieved from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:39:34.673+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:34.672+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:34.695+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:34.695+0000] {dag.py:3823} INFO - Setting next_dagrun for retries_dag to None, run_after=None
+[2026-02-14T22:39:34.726+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_dag.py took 0.097 seconds
+[2026-02-14T22:40:05.182+0000] {processor.py:161} INFO - Started process (PID=27278) to work on /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:40:05.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_dag.py for tasks to queue
+[2026-02-14T22:40:05.195+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:40:05.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:40:05.205+0000] {processor.py:840} INFO - DAG(s) 'retries_dag' retrieved from /opt/airflow/dags/retry_dag.py
+[2026-02-14T22:40:05.235+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:40:05.234+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:40:05.255+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:40:05.255+0000] {dag.py:3823} INFO - Setting next_dagrun for retries_dag to None, run_after=None
+[2026-02-14T22:40:05.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_dag.py took 0.109 seconds

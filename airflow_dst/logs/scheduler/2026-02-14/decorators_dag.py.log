@@ -2259,3 +2259,24 @@
 [2026-02-14T22:38:26.405+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:26.404+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-02-14T22:38:26.426+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:26.425+0000] {dag.py:3823} INFO - Setting next_dagrun for deco_simple_xcom_dag to None, run_after=None
 [2026-02-14T22:38:26.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/decorators_dag.py took 0.100 seconds
+[2026-02-14T22:38:57.104+0000] {processor.py:161} INFO - Started process (PID=27085) to work on /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:38:57.106+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/decorators_dag.py for tasks to queue
+[2026-02-14T22:38:57.109+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:57.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:38:57.119+0000] {processor.py:840} INFO - DAG(s) 'deco_simple_xcom_dag' retrieved from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:38:57.152+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:57.152+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:38:57.173+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:57.173+0000] {dag.py:3823} INFO - Setting next_dagrun for deco_simple_xcom_dag to None, run_after=None
+[2026-02-14T22:38:57.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/decorators_dag.py took 0.108 seconds
+[2026-02-14T22:39:27.363+0000] {processor.py:161} INFO - Started process (PID=27169) to work on /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:27.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/decorators_dag.py for tasks to queue
+[2026-02-14T22:39:27.368+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:27.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:27.377+0000] {processor.py:840} INFO - DAG(s) 'deco_simple_xcom_dag' retrieved from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:27.409+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:27.408+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:27.431+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:27.431+0000] {dag.py:3823} INFO - Setting next_dagrun for deco_simple_xcom_dag to None, run_after=None
+[2026-02-14T22:39:27.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/decorators_dag.py took 0.104 seconds
+[2026-02-14T22:39:57.892+0000] {processor.py:161} INFO - Started process (PID=27261) to work on /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:57.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/decorators_dag.py for tasks to queue
+[2026-02-14T22:39:57.897+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:57.897+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:57.909+0000] {processor.py:840} INFO - DAG(s) 'deco_simple_xcom_dag' retrieved from /opt/airflow/dags/decorators_dag.py
+[2026-02-14T22:39:57.944+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:57.943+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:39:57.974+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:39:57.973+0000] {dag.py:3823} INFO - Setting next_dagrun for deco_simple_xcom_dag to None, run_after=None
+[2026-02-14T22:39:58.011+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/decorators_dag.py took 0.125 seconds
