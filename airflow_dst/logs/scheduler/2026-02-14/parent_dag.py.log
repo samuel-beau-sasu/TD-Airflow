@@ -3018,3 +3018,203 @@
 [2026-02-14T22:27:50.131+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:27:50.131+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-02-14T22:27:50.136+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:27:50.135+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
 [2026-02-14T22:27:50.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.131 seconds
+[2026-02-14T22:28:20.880+0000] {processor.py:161} INFO - Started process (PID=25348) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:20.882+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:28:20.885+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.885+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:20.917+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:20.940+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.940+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:28:20.964+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.964+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:28:20.972+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.972+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:28:20.990+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.989+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:28:20.998+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:20.997+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:28:21.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.154 seconds
+[2026-02-14T22:28:51.274+0000] {processor.py:161} INFO - Started process (PID=25430) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:51.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:28:51.279+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:51.310+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:28:51.333+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.332+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:28:51.366+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.366+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:28:51.374+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.373+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:28:51.388+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.387+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:28:51.393+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:28:51.392+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:28:51.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.150 seconds
+[2026-02-14T22:29:21.571+0000] {processor.py:161} INFO - Started process (PID=25512) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:21.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:29:21.575+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.575+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:21.604+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:21.627+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.627+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:29:21.653+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.652+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:29:21.660+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.659+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:29:21.673+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.672+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:29:21.677+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:21.677+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:29:21.697+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.131 seconds
+[2026-02-14T22:29:52.228+0000] {processor.py:161} INFO - Started process (PID=25595) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:52.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:29:52.232+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.232+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:52.282+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:29:52.310+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.309+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:29:52.339+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.338+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:29:52.346+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.345+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:29:52.360+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.360+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:29:52.365+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:29:52.364+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:29:52.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.161 seconds
+[2026-02-14T22:30:22.889+0000] {processor.py:161} INFO - Started process (PID=25679) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:22.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:30:22.893+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:22.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:22.935+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:22.958+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:22.957+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:30:22.980+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:22.979+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:30:22.986+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:22.985+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:30:22.997+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:22.997+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:30:23.001+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:23.001+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:30:23.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.137 seconds
+[2026-02-14T22:30:53.425+0000] {processor.py:161} INFO - Started process (PID=25763) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:53.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:30:53.430+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.429+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:53.460+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:30:53.479+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.478+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:30:53.499+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.499+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:30:53.506+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.505+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:30:53.519+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.519+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:30:53.524+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:30:53.524+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:30:53.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.126 seconds
+[2026-02-14T22:31:23.955+0000] {processor.py:161} INFO - Started process (PID=25847) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:23.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:31:23.959+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:23.958+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:23.989+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:24.008+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:24.007+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:31:24.028+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:24.028+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:31:24.035+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:24.035+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:31:24.047+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:24.047+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:31:24.051+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:24.050+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:31:24.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.122 seconds
+[2026-02-14T22:31:54.475+0000] {processor.py:161} INFO - Started process (PID=25931) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:54.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:31:54.480+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.479+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:54.510+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:31:54.531+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.531+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:31:54.554+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.553+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:31:54.559+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.559+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:31:54.571+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.570+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:31:54.574+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:31:54.574+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:31:54.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.124 seconds
+[2026-02-14T22:32:25.392+0000] {processor.py:161} INFO - Started process (PID=26014) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:25.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:32:25.396+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.395+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:25.426+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:25.443+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.443+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:32:25.466+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.465+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:32:25.472+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.472+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:32:25.485+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.484+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:32:25.490+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:25.490+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:32:25.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.123 seconds
+[2026-02-14T22:32:55.703+0000] {processor.py:161} INFO - Started process (PID=26097) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:55.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:32:55.708+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.708+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:55.740+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:32:55.759+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.759+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:32:55.781+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.780+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:32:55.788+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.787+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:32:55.801+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.800+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:32:55.805+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:32:55.805+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:32:55.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.130 seconds
+[2026-02-14T22:33:26.459+0000] {processor.py:161} INFO - Started process (PID=26180) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:26.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:33:26.464+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:26.498+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:26.520+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.520+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:33:26.545+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.544+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:33:26.551+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.551+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:33:26.566+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.566+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:33:26.571+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:26.571+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:33:26.604+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.150 seconds
+[2026-02-14T22:33:57.366+0000] {processor.py:161} INFO - Started process (PID=26271) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:57.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:33:57.371+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:57.402+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:33:57.420+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.420+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:33:57.440+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.440+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:33:57.446+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.446+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:33:57.460+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.459+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:33:57.464+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:33:57.463+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:33:57.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.126 seconds
+[2026-02-14T22:34:28.025+0000] {processor.py:161} INFO - Started process (PID=26354) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:28.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:34:28.030+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:28.067+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:28.091+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.091+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:34:28.119+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.119+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:34:28.125+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.125+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:34:28.138+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:34:28.142+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:28.142+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:34:28.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.141 seconds
+[2026-02-14T22:34:58.973+0000] {processor.py:161} INFO - Started process (PID=26437) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:58.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:34:58.977+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:58.977+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:59.006+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:34:59.024+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:59.023+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:34:59.045+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:59.044+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:34:59.050+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:59.050+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:34:59.061+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:59.061+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:34:59.065+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:34:59.065+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:34:59.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.116 seconds
+[2026-02-14T22:35:29.235+0000] {processor.py:161} INFO - Started process (PID=26519) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:29.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:35:29.238+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.238+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:29.266+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:29.285+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.284+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:35:29.304+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.304+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:35:29.309+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.309+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:35:29.320+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.319+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:35:29.323+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:29.323+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:35:29.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.108 seconds
+[2026-02-14T22:35:59.915+0000] {processor.py:161} INFO - Started process (PID=26602) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:59.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:35:59.920+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:59.920+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:59.956+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:35:59.977+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:59.977+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:36:00.000+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:35:59.999+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:36:00.005+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:00.005+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:36:00.019+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:00.019+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:36:00.023+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:00.023+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:36:00.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.134 seconds
+[2026-02-14T22:36:30.273+0000] {processor.py:161} INFO - Started process (PID=26685) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:36:30.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:36:30.277+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.277+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:36:30.308+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:36:30.326+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.326+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:36:30.346+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.346+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:36:30.352+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.352+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:36:30.363+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.363+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:36:30.367+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:36:30.367+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:36:30.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.119 seconds
+[2026-02-14T22:37:00.786+0000] {processor.py:161} INFO - Started process (PID=26767) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:00.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:37:00.795+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.794+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:00.832+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:00.867+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.867+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:37:00.895+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.894+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:37:00.901+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.900+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:37:00.913+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.913+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:37:00.918+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:00.917+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:37:00.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.159 seconds
+[2026-02-14T22:37:31.420+0000] {processor.py:161} INFO - Started process (PID=26852) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:31.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:37:31.424+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.424+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:31.453+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:37:31.473+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.473+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:37:31.499+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.498+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:37:31.505+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.505+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:37:31.519+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.519+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:37:31.523+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:37:31.523+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:37:31.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.127 seconds
+[2026-02-14T22:38:01.973+0000] {processor.py:161} INFO - Started process (PID=26943) to work on /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:38:01.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/parent_dag.py for tasks to queue
+[2026-02-14T22:38:01.988+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:01.988+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:38:02.022+0000] {processor.py:840} INFO - DAG(s) 'parent_to_subdag.my_subdag', 'parent_to_subdag' retrieved from /opt/airflow/dags/parent_dag.py
+[2026-02-14T22:38:02.046+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:02.045+0000] {dag.py:3036} INFO - Sync 2 DAGs
+[2026-02-14T22:38:02.072+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:02.071+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag to None, run_after=None
+[2026-02-14T22:38:02.079+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:02.078+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:38:02.093+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:02.092+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-02-14T22:38:02.097+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:38:02.097+0000] {dag.py:3823} INFO - Setting next_dagrun for parent_to_subdag.my_subdag to None, run_after=None
+[2026-02-14T22:38:02.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/parent_dag.py took 0.156 seconds
