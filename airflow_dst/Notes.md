@@ -27,6 +27,9 @@ docker-compose down
 # vérifier l'état des conteneurs
 docker container ls
 
+# Demarrer le terminal airflow
+./airflow.sh bash
+
 # Demarrer l'interface graphique
 18.200.48.46:8080
 
@@ -41,3 +44,19 @@ chmod +x airflow.sh
 
 docker-compose logs airflow-scheduler | grep -i email
 docker-compose logs airflow-scheduler | grep -i smtp
+
+# exam
+cc16d144fb0eab68eab5b11f80c993c6
+06768d8496a01224cd8ddb348f312338
+
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?q=paris&appid=06768d8496a01224cd8ddb348f312338"
+
+
+# Tache 1
+
+La première tâche (1) consiste donc en la récupération des données depuis OpenWeatherMap: 
+on pourra faire plusieurs requêtes pour avoir les données sur plusieurs villes. 
+Pour cela, on stockera une Variable Airflow nommée cities. 
+Dans notre solution, nous utilisons ['paris', 'london', 'washington'] 
+
+curl -X GET "https://api.openweathermap.org/data/2.5/weather?q=paris&appid=06768d8496a01224cd8ddb348f312338"
