@@ -39,3 +39,4 @@ def transform_data_into_csv(n_files=None, filename='data.csv'):
     )
 
     df.to_csv(os.path.join(result_folder, filename), index=False)
+    

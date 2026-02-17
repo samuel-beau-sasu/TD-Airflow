@@ -126,7 +126,6 @@ def select_and_train_best_model(score_lr, score_dt, score_rf):
 
     return best['name']  # Retourne le nom du meilleur modèle
 
-
 def train_best_model(task_instance):
     """
     Wrapper Airflow : récupère les scores depuis XCom
