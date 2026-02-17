@@ -37,7 +37,7 @@ def fetch_weather_data(cities=None):
     #output_dir = "/opt/airflow/raw_files"
     output_dir = os.getenv(
         "AIRFLOW_RAW_FILES_PATH",  # Variable d'environnement
-        "/opt/airflow/raw_files"   # Valeur par défaut dans Docker
+        "/app/raw_files"   # Valeur par défaut dans Docker
     )
     
     os.makedirs(output_dir, exist_ok=True)

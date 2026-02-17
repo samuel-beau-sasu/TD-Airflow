@@ -6,7 +6,7 @@ def transform_data_into_csv(n_files=None, filename='data.csv'):
     #parent_folder = "/opt/airflow/raw_files"
     parent_folder = os.getenv(
         "AIRFLOW_RAW_FILES_PATH",  # Variable d'environnement
-        "/opt/airflow/raw_files"   # Valeur par défaut dans Docker
+        "/app/raw_files"   # Valeur par défaut dans Docker
     )
     
     files = sorted(os.listdir(parent_folder), reverse=True)
@@ -35,7 +35,7 @@ def transform_data_into_csv(n_files=None, filename='data.csv'):
     #result_folder = '/opt/airflow/clean_data'
     result_folder = os.getenv(
         "AIRFLOW_RESULT_FILES_PATH",  # Variable d'environnement
-        "/opt/airflow/clean_data"   # Valeur par défaut dans Docker
+        "/app/clean_data"   # Valeur par défaut dans Docker
     )
 
     df.to_csv(os.path.join(result_folder, filename), index=False)

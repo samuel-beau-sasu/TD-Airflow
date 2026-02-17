@@ -26,7 +26,7 @@ def train_and_save_model(model, X, y, path_to_model=None):
     if path_to_model is None:
         path_to_model = os.getenv(
             "AIRFLOW_MODEL_PATH",  # Variable d'environnement
-            "/opt/airflow/clean_data/model.pckl"   # Valeur par défaut dans Docker
+            "/app/clean_data/model.pckl"   # Valeur par défaut dans Docker
         )
 
     # training the model
@@ -40,7 +40,7 @@ def prepare_data(path_to_data=None):
     if path_to_data is None:
         path_to_data = os.getenv(
             "AIRFLOW_DATA_PATH",  # Variable d'environnement
-            "/opt/airflow/clean_data/fulldata.csv"   # Valeur par défaut dans Docker
+            "/app/clean_data/fulldata.csv"   # Valeur par défaut dans Docker
         )
     # reading data
     df = pd.read_csv(path_to_data)
@@ -114,7 +114,7 @@ def select_and_train_best_model(score_lr, score_dt):
     X, y = prepare_data()
     best_model_path = os.getenv(
         "AIRFLOW_MODEL_PATH",
-        "/opt/airflow/clean_data/best_model.pickle"
+        "/app/clean_data/best_model.pickle"
     )
     train_and_save_model(best['model'], X, y, best_model_path)
     print(f"💾 Modèle sauvegardé : {best_model_path}")
@@ -182,7 +182,7 @@ def train_best_model_old(task_instance):
     X, y = prepare_data()
     best_model_path = os.getenv(
         "AIRFLOW_MODEL_PATH",
-        "/opt/airflow/clean_data/best_model.pickle"
+        "/app/clean_data/best_model.pickle"
     )
     train_and_save_model(best['model'], X, y, best_model_path)
     print(f"💾 Modèle sauvegardé : {best_model_path}")
