@@ -246,12 +246,6 @@ def train_best_model(task_instance):
     best = select_and_train_best_model(score_lr, score_dt, score_rf)
     return best
 
-   
-    
-
-#from collect_data import fetch_weather_data
-#from transform_data import transform_data_into_csv
-#from train_data import compute_model_score, train_and_save_model,prepare_data, train_best_model
 
 def compute_lr_score_wrapper(task_instance):
     """Wrapper autonome : prépare les données ET calcule le score"""
@@ -289,8 +283,29 @@ def compute_rf_score_wrapper(task_instance):
         value=score
     )
     
+# ============================================================
+# DAG 1 : Collecte toutes les minutes
+# ============================================================
+with DAG(
+    dag_id='weather_fetch_dag',
+    tags=['tutorial', 'datascientest', 'weather'],
+    schedule_interval=datetime.timedelta(minutes=1), 
+    default_args={
+        'owner': 'airflow',
+        'start_date': days_ago(0),
+        'retries': 1,
+    },
+    catchup=False
+) as fetch_dag:
 
+    fetch_task = PythonOperator(
+        task_id='fetch_weather_data',
+        python_callable=fetch_weather_data
+    )
 
+# ============================================================
+# DAG 2 : Transformation + Entraînement 
+# ============================================================
 with DAG(
     dag_id='weather_dag',
     description='Récupération des données météo',
@@ -332,11 +347,7 @@ train_best_model
 
     fetch_task = PythonOperator(
         task_id='fetch_weather_data',
-        python_callable=fetch_weather_data,
-         doc="""fetch_task
-
-            It has an ugly description.
-            """
+        python_callable=fetch_weather_data
     )
 
     transform_task_all = PythonOperator(
