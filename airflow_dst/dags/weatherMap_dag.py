@@ -9,7 +9,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 
-# Plus besoin de sys.path.insert grâce à PYTHONPATH !
 from collect_data import fetch_weather_data
 from transform_data import transform_data_into_csv
 from train_data import compute_model_score, train_and_save_model,prepare_data, train_best_model
@@ -56,6 +55,31 @@ with DAG(
     dag_id='weather_dag',
     description='Récupération des données météo',
     tags=['tutorial', 'datascientest', 'weather'],
+    doc_md="""
+    # 🌤️ Weather ML Pipeline
+
+## Description
+Ce DAG collecte des données météorologiques depuis **OpenWeatherMap**,
+les transforme et entraîne plusieurs modèles de **Machine Learning**
+pour prédire les températures futures.
+
+## Architecture du pipeline
+```
+fetch_weather_data
+       │
+       ▼
+[transform_all, transform_20]
+       │
+       ▼
+   group_Train
+  ┌────┼────┐
+  LR   DT   RF
+  └────┼────┘
+       │
+       ▼
+train_best_model
+```
+            """,
     schedule_interval=datetime.timedelta(minutes=60),
     default_args={
         'owner': 'airflow',
@@ -68,7 +92,11 @@ with DAG(
 
     fetch_task = PythonOperator(
         task_id='fetch_weather_data',
-        python_callable=fetch_weather_data
+        python_callable=fetch_weather_data,
+         doc="""fetch_task
+
+            It has an ugly description.
+            """
     )
 
     transform_task_all = PythonOperator(
