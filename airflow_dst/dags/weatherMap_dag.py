@@ -7,6 +7,7 @@ from airflow.utils.task_group import TaskGroup
 import datetime
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 
 # Plus besoin de sys.path.insert grâce à PYTHONPATH !
 from collect_data import fetch_weather_data
@@ -34,6 +35,18 @@ def compute_dt_score_wrapper(task_instance):
     print(f"📊 Score DecisionTree : {score:.4f}")
     task_instance.xcom_push(
         key="score_dt",
+        value=score
+    )
+
+def compute_rf_score_wrapper(task_instance):
+    """Wrapper autonome : prépare les données ET calcule le score"""
+    X, y = prepare_data()                          # Prépare les données
+    score = compute_model_score(                    # Calcule le score
+        RandomForestRegressor(), X, y
+    )
+    print(f"📊 Score Random Forest : {score:.4f}")
+    task_instance.xcom_push(
+        key="score_rf",
         value=score
     )
     
@@ -82,6 +95,10 @@ with DAG(
         task_Train2 = PythonOperator(
             task_id='score_dt_task',
             python_callable=compute_dt_score_wrapper 
+        )
+        task_Train3 = PythonOperator(
+            task_id='score_rf_task',
+            python_callable=compute_rf_score_wrapper 
         )
         
     train_task = PythonOperator(

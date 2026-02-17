@@ -83,7 +83,7 @@ def prepare_data(path_to_data=None):
 
     return features, target
 
-def select_and_train_best_model(score_lr, score_dt):
+def select_and_train_best_model(score_lr, score_dt, score_rf):
     """
     Fonction PURE : pas de dépendance Airflow !
     Compare les scores et sauvegarde le meilleur modèle.
@@ -99,6 +99,11 @@ def select_and_train_best_model(score_lr, score_dt):
             'name': 'DecisionTreeRegressor',
             'score': score_dt,
             'model': DecisionTreeRegressor()
+        },
+        {
+            'name': 'RandomForestRegressor',
+            'score': score_rf,
+            'model': RandomForestRegressor()
         },
     ]
 
@@ -136,53 +141,19 @@ def train_best_model(task_instance):
         task_ids='group_Train.score_dt_task',
         key='score_dt'
     )
+    score_rf = task_instance.xcom_pull(
+        task_ids='group_Train.score_rf_task',
+        key='score_rf'
+    )
 
     print(f"📥 Scores récupérés depuis XCom :")
     print(f"   score_lr = {score_lr}")
     print(f"   score_dt = {score_dt}")
+    print(f"   score_rf = {score_rf}")
 
     # Déléguer à la fonction pure
-    best = select_and_train_best_model(score_lr, score_dt)
+    best = select_and_train_best_model(score_lr, score_dt, score_rf)
     return best
 
-def train_best_model_old(task_instance):
-    """
-    Récupère les scores depuis XCom et sauvegarde le meilleur modèle.
-    """
-
-    # --- 1. Définir les modèles ---
-    models = [
-        {
-            'name': 'LinearRegression',
-            'task_id': 'group_Train.score_lr_task',  # ← task_id avec groupe
-            'key': 'score_lr',                        # ← clé XCom définie dans compute_lr_score_wrapper
-            'model': LinearRegression()
-        },
-        {
-            'name': 'DecisionTreeRegressor',
-            'task_id': 'group_Train.score_dt_task',  # ← task_id avec groupe
-            'key': 'score_dt',                        # ← clé XCom définie dans compute_dt_score_wrapper
-            'model': DecisionTreeRegressor()
-        },
-    ]
-
-    # --- 2. Récupérer les scores depuis XCom ---
-    for m in models:
-        m['score'] = task_instance.xcom_pull(
-            task_ids=m['task_id'],  # ← D'où vient la valeur
-            key=m['key']            # ← Quelle clé récupérer
-        )
-        print(f"📊 {m['name']} : {m['score']:.4f}")
-
-    # --- 3. Trouver le meilleur modèle ---
-    best = max(models, key=lambda m: m['score'])
-    print(f"🏆 Meilleur modèle : {best['name']} (score: {best['score']:.4f})")
-
-    # --- 4. Entraîner et sauvegarder ---
-    X, y = prepare_data()
-    best_model_path = os.getenv(
-        "AIRFLOW_MODEL_PATH",
-        "/app/clean_data/best_model.pickle"
-    )
-    train_and_save_model(best['model'], X, y, best_model_path)
-    print(f"💾 Modèle sauvegardé : {best_model_path}")
+   
+    
